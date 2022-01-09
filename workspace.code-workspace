@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CB",
+		"files.associations": {
+			"iostream": "cpp"
+		},
+		"git.ignoreLimitWarning": true
+	}
+}

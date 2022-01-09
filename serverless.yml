@@ -1,0 +1,28 @@
+service: awsHelloWorld
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  versionFunctions: false
+  memorySize: 128
+  region: ap-south-1
+
+functions:
+  hello:
+    handler: handler.helloWorld
+    events:
+        - http:
+             path: /HelloWorld
+             method: get
+  helloWeather:
+    handler: handler.getDetailsByCity
+    events:
+        - http:
+             path: /details
+             method: get
+
+
+
